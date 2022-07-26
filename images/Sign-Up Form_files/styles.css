@@ -51,7 +51,7 @@ body{
 #main{
     height: 34vh;
     background-color: rgb(34, 0, 0);
-    align-content: center;
+
 }
 
 #footer{
@@ -68,7 +68,16 @@ p {
     margin-inline-end: 0px;
 }
 
-
+.topCopy{
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: clamp(9px, 1.5vw, 22px);
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vh;
+}
 
 .transCont{
     display:flex;
@@ -116,41 +125,12 @@ p {
     padding: 0px 0px 0px 0px;
 }
 
-.topCopy{
-    color:white;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    font-size: clamp(9px, 1.5vw, 22px);
-    margin-top: 5vh;
-    margin-left: 10%;
-    margin-right: auto;
-    margin-bottom: 1vh;
-}
-
-.formText, .bodyHead{
-    color:white;
-}
-
 .formText{
-    margin-top: 2vh;
-    margin-left: 10%;
-    margin-right: auto;
-    margin-bottom: 1vh;
-}
-
-.bodyHead{
-    margin-top: 2vh;
-    margin-left: 10%;
-    margin-right: auto;
-    margin-bottom: 1vh;
+    color:white;
 }
 
 .footerText{
     color:white;
-    margin-top: 3vh;
-    margin-left: 10%;
-    margin-right: auto;
-    margin-bottom: 1vh;
 }
 
 .textFooter{
