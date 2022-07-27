@@ -13,13 +13,14 @@ body{
 }
 
 #container{
+    position: relative;
     grid-template-columns: auto;
     display: flex;
     flex-direction: row;
     height: 100vh;
     width: 100hv;
 
-    background-color: rgb(15, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 #left{
@@ -28,6 +29,12 @@ body{
     display: flex;
     height: 100vh;
     width: 33vw;
+
+    box-shadow: 
+    0 0 42px rgba(255, 0, 0, 0.05),
+    0 0 100px rgba(255, 0, 0, 0.05),
+    0 0 150px rgba(255, 0, 0, 0.05),
+    0 0 200px rgba(255, 0, 0, 0.05);
 }
 
 #right{
@@ -43,21 +50,27 @@ body{
 }
 
 #header{
-    background-color: rgb(15, 0, 0);
+    background-color: rgb(0, 0, 0);
     height: 33vh;
     align-content: center;
 }
 
 #main{
     height: 34vh;
-    background-color: rgb(34, 0, 0);
+    background-color: rgb(5, 0, 0);
     align-content: center;
+    box-shadow: 
+  
+    0px 5px 10px 0px rgba(250, 0, 0, 0.116);
+
 }
 
 #footer{
-    background-color: rgb(15, 0, 0);    
+    background-color: rgb(0, 0, 0);    
     bottom: 0px;
-    height: 33vh;
+    height: 30vh;
+    left: 33vw;
+    bottom: 100vh;
 }
 
 p {
@@ -84,6 +97,12 @@ p {
     justify-content: center;
 
     background-color: rgba(92, 0, 0, 30%);
+
+    box-shadow: 
+    0 0 7px rgba(255, 0, 0, 0.05),
+    0 0 10px rgb(235, 0, 0, 0.05),
+    0 0 21px rgb(85, 0, 0, 0.05),
+    0 0 42px rgb(85, 0, 0, 0.05);
     
 }
 
@@ -96,6 +115,8 @@ p {
     object-fit: cover;
     max-height: 80%;
     max-width: 100%;
+
+    box-shadow:
 }
 
 .transText{
@@ -106,6 +127,12 @@ p {
     font-family: "Norse";
     font-size: 6vw;
     color: rgb(255, 255, 255);
+
+    text-shadow: 
+    0 0 7px rgba(255, 0, 0, 0.719),
+    0 0 10px rgb(235, 0, 0, 0.5),
+    0 0 21px rgb(85, 0, 0, 0.5),
+    0 0 42px red;
 }
 
 .image{
@@ -128,17 +155,69 @@ p {
 }
 
 .formText, .bodyHead{
-    color:white;
+    font-family: 'Courier New', Courier, monospace;    
 }
 
 .formText{
-    margin-top: 2vh;
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-rows: 1;
+    font-size: clamp(9px, 1.4vw, 18px);
+    
+    margin-top: 1vh;
     margin-left: 10%;
     margin-right: auto;
-    margin-bottom: 1vh;
+    margin-bottom: 4vh;
+}
+
+input{
+    background-color: rgb(29, 0, 0);
+    border: 1px solid red;
+    border-radius: 3px;
+    width: 18vw;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 2px rgb(54, 0, 0);
+}
+
+.submitButton{
+    background-color: rgb(29, 0, 0);
+    color:white;
+    padding: 5px;
+
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 
+        0 0 7px rgba(143, 0, 0, 0.5),
+        0 0 10px rgb(235, 0, 0, 0.5),
+        0 0 21px rgb(85, 0, 0, 0.5),
+        0 0 42px red;
+
+    border: 1px solid red;
+
+    border-radius: 3px;
+    width: 18vw;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 2px rgb(54, 0, 0);
+}
+
+.topFormRow, .middleFormRow, .bottomFormRow{
+    justify-items: ;
+}
+
+
+fieldset{
+    display: grid;
+    grid-template-rows: auto;
+    border: none;
+    padding: 0px;
+    margin: 0 0 1vh 0;
 }
 
 .bodyHead{
+    color:white;
+    font-weight: bold;
+    font-size: clamp(9px, 1.6vw, 22px);
+
     margin-top: 2vh;
     margin-left: 10%;
     margin-right: auto;
@@ -146,11 +225,25 @@ p {
 }
 
 .footerText{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: clamp(9px, 1.5vw, 18px);
     color:white;
     margin-top: 3vh;
     margin-left: 10%;
     margin-right: auto;
     margin-bottom: 1vh;
+}
+
+.login{
+    color: rgb(255, 0, 0);
+    font-size: clamp(9px, 1.55vw, 18px);
+
+    text-shadow: 
+    0 0 7px rgba(143, 0, 0, 0.5),
+    0 0 10px rgb(235, 0, 0, 0.5),
+    0 0 21px rgb(85, 0, 0, 0.5),
+    0 0 42px red;
 }
 
 .textFooter{
