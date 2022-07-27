@@ -43,40 +43,54 @@
             <div id="main">
                 <p class="bodyHead">Let's do this!</p>
 
-                <form class="formText" action="" method="post">
+                <form class="formText" action="" method="post" id="a-form">
 
                     <fieldset>
                         <div class="topFormRow">
-                        <label for="firstName" class="first-name">FIRST NAME</label>                    
-                        <input type="text" id="firstName">
-                        
-                        <label for="lastName" class="last-name">LAST NAME</label>                    
-                        <input type="text" id="lastName">
-                        </div>
+                            <div class="fName">
+                                <label for="firstName" class="first-name">FIRST NAME</label>                    
+                                <input type="text" id="firstName">
+                            </div>
+                            <div class="lName">
+                                <label for="lastName" class="last-name">LAST NAME</label>                    
+                                <input type="text" id="lastName">
+                            </div>
+                        </div>                        
                     </fieldset>
+
                     <fieldset>
                         <div class="middleFormRow">
-                            <label for="email" class="email">EMAIL</label>
-                            <input type="email" name="email" id="email">
-                            <label for="tel" class="tel">PHONE NUMBER</label>
-                            <input type="tel" name="tel" id="tel">
+                            <div class="formE">
+                                <label for="email" class="email">EMAIL</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div class="formTel">
+                                <label for="tel" class="tel">PHONE NUMBER</label>
+                                <input type="tel" name="tel" id="tel">
+                            </div>
                         </div>
                     </fieldset>
 
                     <fieldset>
                         <div class="bottomFormRow">
-                            <label for="user_password" class="tel">PASSWORD</label>
-                            <input type="password" name="user_password" id="user_password">
-                            <label for="user_password_conf" class="tel">CONFIRM PASSWORD</label>
-                            <input type="password" name="user_password_conf" id="user_password_conf">
+                            <div class="passOne">
+                              <label for="user_password" class="tel">PASSWORD</label>
+                              <input type="password" name="user_password" id="user_password">
+                            </div>
+                            <div class="passTwo">
+                              <label for="user_password_conf" class="tel">CONFIRM PASSWORD</label>
+                              <input type="password" name="user_password_conf" id="user_password_conf">
+                            </div>
                         </div>
                     </fieldset>
-                    <button type="submit" class="submitButton">Create Account</button>
+
                 </form>
             </div>
 
             <div id="footer">
                 <p class="footerText">
+                    <button type="submit" class="submitButton" form="a-form">Create Account</button>
+
                     <br>
                     <br>
                     Already have an account? <strong class="login">Log In</strong>
