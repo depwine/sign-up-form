@@ -3,8 +3,8 @@
 }
 
 @font-face {
-    font-family: "Norse";
-    src: url(https://www.1001fonts.com/download/font/norse.regular.otf);
+    font-family: 'Cormorant SC', serif;
+
 }
 
 body{
@@ -111,8 +111,8 @@ p {
     align-self: center;
 
     object-fit: cover;
-    max-height: 80%;
-    max-width: 100%;
+    max-height: 50%;
+    max-width: 50%;
 
     box-shadow:
 }
@@ -122,8 +122,8 @@ p {
     align-self: center;
     padding: 0px 0px 0px 20px;
 
-    font-family: "Norse";
-    font-size: 6vw;
+    font-family: 'Cormorant SC';
+    font-size: 5vw;
     color: rgb(255, 255, 255);
 
     text-shadow: 
