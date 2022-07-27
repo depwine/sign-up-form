@@ -48,12 +48,12 @@
                     <fieldset>
                         <div class="topFormRow">
                             <div class="fName">
-                                <label for="firstName" class="first-name">FIRST NAME</label>                    
-                                <input type="text" id="firstName">
+                                <label for="firstName" class="first-name">FIRST NAME*</label>                    
+                                <input type="text" id="firstName" required>
                             </div>
                             <div class="lName">
-                                <label for="lastName" class="last-name">LAST NAME</label>                    
-                                <input type="text" id="lastName">
+                                <label for="lastName" class="last-name">LAST NAME*</label>                    
+                                <input type="text" id="lastName" required>
                             </div>
                         </div>                        
                     </fieldset>
@@ -61,12 +61,15 @@
                     <fieldset>
                         <div class="middleFormRow">
                             <div class="formE">
-                                <label for="email" class="email">EMAIL</label>
-                                <input type="email" name="email" id="email">
+                                <label for="email" class="email">EMAIL*</label>
+                                <input type="email" name="email" id="email" 
+                                placeholder="someone@website.com" required>
                             </div>
                             <div class="formTel">
-                                <label for="tel" class="tel">PHONE NUMBER</label>
-                                <input type="tel" name="tel" id="tel">
+                                <label for="phone" class="tel">PHONE NUMBER*</label>
+                                <input type="tel" name="phone" id="phone" 
+                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                 placeholder="123-123-1234"   required>
                             </div>
                         </div>
                     </fieldset>
@@ -74,15 +77,22 @@
                     <fieldset>
                         <div class="bottomFormRow">
                             <div class="passOne">
-                              <label for="user_password" class="tel">PASSWORD</label>
-                              <input type="password" name="user_password" id="user_password">
+                              <label for="user_password" class="tel">PASSWORD*</label>
+                              <input type="password" name="user_password" id="user_password" 
+                              onkeyup="check();" required />
                             </div>
                             <div class="passTwo">
-                              <label for="user_password_conf" class="tel">CONFIRM PASSWORD</label>
-                              <input type="password" name="user_password_conf" id="user_password_conf">
+                              <label for="user_password_conf" class="tel">CONFIRM PASSWORD*</label>
+                              <input type="password" name="user_password_conf" 
+                              id="user_password_conf" onkeyup="check();" required/>
+
                             </div>
+
                         </div>
                     </fieldset>
+
+                    <span id="message"></span>
+
 
                 </form>
             </div>
@@ -93,7 +103,7 @@
 
                     <br>
                     <br>
-                    Already have an account? <strong class="login">Log In</strong>
+                    Already have an account? <a href="index.html" class="login">Log In</strong>
                 </p>
 
             </div>
